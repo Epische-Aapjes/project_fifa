@@ -235,7 +235,7 @@ color: orange;
 /*====================slide 2========================*/
 .team-invoer{
     padding-left: 6%;
-    padding-top: 60px;
+    padding-top: 0px;
  display: flex; 
  height: 400px;
  margin: 0 auto;
@@ -245,12 +245,26 @@ color: orange;
   display: flex;
 list-style: none;
  flex-direction: row;
+ padding-right: 20%;
+ padding-top: 10%;
+
+}
+.h5-player{
+  padding-left: 50px;
+
+}
+.team{
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  padding-left: 7%;
+  padding-top: 20%;
 }
 
 #addplayer{
     margin-right: -10px;
     height: 30px;
-
+  
 
 }
 .input-playerinf{
@@ -264,12 +278,16 @@ list-style: none;
 #addplayerbutton {
     background-color:  #306ccc;
     height: 30px;
-    border-top-right-radius: 7px; 
+    border-radius: 7px; 
     border: none;
     color: white;
     font-weight: bold;
-}
+    text-align: center;
 
+}
+.toevoegen{
+  padding-left: 15%;
+}
 #form-ul li{
     
     margin: 0 auto;
@@ -290,11 +308,15 @@ body{
     
 }
 h5{
+   font-weight: bold;
     color: white;
     margin: 0 auto;
 
 }
-
+.speler-1{
+  padding-left: 23%;
+  padding-bottom: 5%;
+}
 
 .text-input{
     padding-left: 4%;
@@ -307,6 +329,8 @@ h5{
 #inv-tm{
     
     display: flex;
+   
+    padding-right: 20%;
     
     margin: 0 auto;
     border-radius: 3px;
@@ -317,15 +341,16 @@ h4{
     color: #dddddd;
 }
 .dropdown{
-    width: 20%;
+  padding-left: 15%;
+    width: 80%;
 }
 .dropdown h5{
-padding-left: 18%;
+
 padding-bottom: 6%;
 }
 .submit{
     padding-top: 50px;
-    padding-left: 2%;
+    padding-left: 17%;
 }
 
 .button {

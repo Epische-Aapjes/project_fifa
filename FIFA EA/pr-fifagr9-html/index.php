@@ -69,19 +69,19 @@
   <div class="style">
 <form class="team-invoer" action="app/addplayer.php" method="post">
 <div class="addplayer">
-<h5>een speler toevoegen</h5>
+<h5 class="speler-1">een speler toevoegen</h5>
 <ul class="input-playerinf">
 <li><input id="addplayer" type="text" name="voornaam" placeholder="voornaam: "></li>
    <li> <input id="addplayer" type="text" name="achternaam" placeholder="achternaam: "></li>
    <li> <input id="addplayer" type="text" name="studentennummer" placeholder="studentennummer: "></li>
-<li><button id="addplayerbutton" type="submit" name="send" value="verstuur"><span>toevoegen </span>
+<li class="toevoegen"><button id="addplayerbutton" type="submit" name="send" value="verstuur"><span>toevoegen </span>
 </button> </li>
 </ul>
 </div>
 </form>
 
 
-<form class action="">
+<form class ="team">
 <div class="text-input">
   <h5>team naam:</h5>
   <input id="inv-tm" type="text" name="team-naam">
@@ -90,7 +90,7 @@
 
 
   <div class="dropdown">
- <h5>selecteer spelers</h5> 
+ <h5 class="h5-player">selecteer spelers</h5> 
   <ul id="form-ul">
       <li><select name="speler">
               <option value="None">Speler 1</option>
