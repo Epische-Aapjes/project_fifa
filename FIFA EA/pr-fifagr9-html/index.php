@@ -65,14 +65,23 @@
 <div class="mySlides ">
   <div class="numbertext">2 / 4</div>
   <!-- ==================slide 2 form======================== -->
-<form class="team-invoer">
+  
+  <div class="style">
+<form class="team-invoer" action="app/addplayer.php" method="post">
 <div class="addplayer">
 <h5>een speler toevoegen</h5>
-<input id="addplayer" type="text" name="team-naam">
-<button id="addplayerbutton" type="submit" name="send" value="verstuur"><span>toevoegen </span>
-</button>
+<ul class="input-playerinf">
+<li><input id="addplayer" type="text" name="voornaam" placeholder="voornaam: "></li>
+   <li> <input id="addplayer" type="text" name="achternaam" placeholder="achternaam: "></li>
+   <li> <input id="addplayer" type="text" name="studentennummer" placeholder="studentennummer: "></li>
+<li><button id="addplayerbutton" type="submit" name="send" value="verstuur"><span>toevoegen </span>
+</button> </li>
+</ul>
 </div>
+</form>
 
+
+<form class action="">
 <div class="text-input">
   <h5>team naam:</h5>
   <input id="inv-tm" type="text" name="team-naam">
@@ -82,46 +91,57 @@
 
   <div class="dropdown">
  <h5>selecteer spelers</h5> 
-  <ul id="form-ul"> 
+  <ul id="form-ul">
+      <li><select name="speler">
+              <option value="None">Speler 1</option>
+      <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
 
-     <li><select name="speler">
-  <option value="volvo">speler 1</option>
-  <option value="saab">bart</option>
-  <option value="fiat">dhovakin</option>
-  <option value="audi">harry potter</option>
-  <option value="audis">its-ya-boi</option>
+
 </select></li>
 
       <li><select name="speler">
-  <option value="volvo">speler 2</option>
-  <option value="saab">bart</option>
-  <option value="fiat">dhovakin</option>
-  <option value="audi">its-ya-boi</option>
-  <option value="audis">harry potter</option>
+  <option value="none">speler 2</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
 </select></</li>
 
       <li><select name="speler">
   <option value="volvo">speler 3</option>
-  <option value="saab">bart</option>
-  <option value="fiat">dhovakin</option>
-  <option value="audi">its-ya-boi</option>
-  <option value="audis">harry potter</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
 </select></</li>
 
       <li><select name="speler">
   <option value="volvo">speler 4</option>
-  <option value="saab">bart</option>
-  <option value="fiat">dhovakin</option>
-  <option value="audi">its-ya-boi</option>
-  <option value="audis">harry potter</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
 </select></</li>
 
       <li><select name="speler">
   <option value="volvo">speler 5</option>
-  <option value="saab">bart</option>
-  <option value="fiat">dhovakin</option>
-  <option value="audi">its-ya-boi</option>
-  <option value="audis">harry potter</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
 
 </select></</li>
 
@@ -129,13 +149,12 @@
   </div>
  <div class="submit">
      
-<button class="button" type="submit" name="send" value="verstuur"><span>verstuur </span>
+<button class="button" type="submit" name="send"><span>verstuur </span>
 </button>
  </div>
 
 </form>
-
-  
+  </div>
 </div>
 
 <div class="mySlides ">
