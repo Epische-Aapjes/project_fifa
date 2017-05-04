@@ -1,0 +1,89 @@
+<div class="mySlides ">
+  <div class="numbertext">2 / 4</div>
+  <!-- ==================slide 2 form======================== -->
+<form class="team-invoer" action="app/addplayer.php" method="post">
+<div class="addplayer">
+<h5>een speler toevoegen</h5>
+<input id="addplayer" type="text" name="voornaam" placeholder="voornaam: Klaas">
+    <input id="addplayer" type="text" name="achternaam" placeholder="achternaam: Jan">
+    <input id="addplayer" type="text" name="studentennummer" placeholder="studentennummer: D226315">
+<button id="addplayerbutton" type="submit" name="send" value="verstuur"><span>toevoegen </span>
+</button>
+</div>
+</form>
+<form action="">
+<div class="text-input">
+  <h5>team naam:</h5>
+  <input id="inv-tm" type="text" name="team-naam">
+   <h4>Teams bekijken</h4>
+  </div>
+
+
+  <div class="dropdown">
+ <h5>selecteer spelers</h5> 
+  <ul id="form-ul">
+      <li><select name="speler">
+              <option value="None">Speler 1</option>
+      <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+
+
+</select></li>
+
+      <li><select name="speler">
+  <option value="none">speler 2</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></</li>
+
+      <li><select name="speler">
+  <option value="volvo">speler 3</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></</li>
+
+      <li><select name="speler">
+  <option value="volvo">speler 4</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></</li>
+
+      <li><select name="speler">
+  <option value="volvo">speler 5</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+
+</select></</li>
+
+  </ul>
+  </div>
+ <div class="submit">
+     
+<button class="button" type="submit" name="send"><span>verstuur </span>
+</button>
+ </div>
+
+</form>
+
+  
+</div>
