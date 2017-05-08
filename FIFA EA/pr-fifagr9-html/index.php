@@ -57,6 +57,7 @@
   <!-- ==================slide 1 form======================== -->
 
 <p>BOI</p>
+    <p>BOI BOI BOI</p>
   <input id="butto" type="text" name="team-naam"><br>
    <button id="button" type="button">submit</button> 
   
