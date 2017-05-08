@@ -10,10 +10,11 @@ $cvsData = $teamName . "," . $fn . "\n";
 $fp = fopen("formTest.csv", "a"); // $fp is now the file pointer to file $filename
 
 if($fp) {
-    $message = 'het werkt ;)';
+    $message = 'The conversion workt!';
     fwrite($fp, $cvsData); // Write information to the file
     fclose($fp); // Close the file
+    header("location:../index.php?message=$message");
 }
 $message = 'Sorry the conversion doesnt work...';
-header("location:../index.html?message=$message")
+header("location:../index.php?message=$message");
 ?>
