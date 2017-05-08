@@ -26,10 +26,10 @@
         <h1 id="fifa">FIFA-bets</h1>
         
         <ul>
+            <li><a    onclick="currentSlide(4)">Resultaten</a></li>
+            <li><a    onclick="currentSlide(3)">Finales</a></li>
             <li><a    onclick="currentSlide(1)">invoer resultaten</a></li>
             <li><a    onclick="currentSlide(2)">invoer Teams en Spelers</a></li>
-            <li><a    onclick="currentSlide(3)">Finales</a></li>
-            <li><a    onclick="currentSlide(4)">Resultaten</a></li>
 
         </ul>
     
@@ -54,7 +54,7 @@
 <div class="mySlides ">
   <div class="numbertext">1 / 4</div>
   
-  <!-- ==================slide 1 form======================== -->
+  <!-- ==================slide 2 form======================== -->
 
 <p>BOI</p>
     <p>BOI BOI BOI</p>
@@ -65,7 +65,7 @@
 
 <div class="mySlides ">
   <div class="numbertext">2 / 4</div>
-  <!-- ==================slide 2 form======================== -->
+  <!-- ==================slide 4 form======================== -->
   
   <div class="style">
 <form class="team-invoer" action="app/addplayer.php" method="post">
@@ -170,7 +170,7 @@
 <div class="mySlides ">
   <div class="numbertext">4 / 4</div>
 
-  <!-- ==================slide 4 form======================== -->
+  <!-- ==================slide 1 form======================== -->
 
 
   <img src="img/vjuur.gif" style="width:100%">
