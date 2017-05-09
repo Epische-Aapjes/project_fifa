@@ -159,11 +159,33 @@
 </div>
 
 <div class="mySlides ">
-  <div class="numbertext">3 / 4</div>
-  <!-- ==================slide 3 form======================== -->
+  <div class="numbertext">2 / 4</div>
+  <!-- ==================slide 3 form======================== -->  
+  
+  <form action="">
+  <div class="champ">
+<input id="champ" type="text" name=""> 
+<h5 id="champw">kampioen</h5>
+  </div>
+<input id="" type="text" name="">  
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 
+<input id="" type="text" name=""> 	
 
 
-  <img src="img/spees2.jpg" style="width:100%">
+
+
+
+
+  </form>
+
+ 
   
 </div>
 

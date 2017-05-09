@@ -410,6 +410,28 @@ padding-bottom: 6%;
 .slideshow-container{
     padding-top: 50px;
 }
+
+/*====================2e slide ========================*/
+.champ{
+
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  width: 10%;
+flex-direction: column;
+padding-bottom: 6%;
+
+}
+#champ{
+  height: 70px;
+  width:70px;
+
+}
+
+champ
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
