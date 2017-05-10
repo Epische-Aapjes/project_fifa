@@ -69,7 +69,7 @@
 </select></li>
 
     <li><select name="speler">
-  <option value="none">team 2</option>
+  <option id="test5" value="none">team 2</option>
   <?php
       foreach ($players as $player)
       {

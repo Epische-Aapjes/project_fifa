@@ -500,6 +500,14 @@ padding-bottom: 1%;
   text-align: center;
   flex-direction: row;
   justify-content: space-between;
+  width: 300px;
+  padding-right: 50px;
+  list-style: none;
+  scale:50px;
+  
+}
+#test5{
+  scale: 50.90px;
 }
 
 
