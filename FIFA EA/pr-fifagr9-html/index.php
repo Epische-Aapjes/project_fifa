@@ -60,7 +60,7 @@
     <p>BOI BOI BOI</p>
   <input id="butto" type="text" name="team-naam"><br>
    <button id="button" type="button">submit</button> 
-  
+  <a href="app/playerlist.php">BOI</a>
 </div>
 
 <div class="mySlides ">
@@ -95,12 +95,22 @@
   <ul id="form-ul">
       <li><select name="speler">
               <option value="None">Speler 1</option>
-      <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
+              <?php
+
+              require ('./app/database.php');
+
+              $sth = $database->prepare("SELECT first_name FROM tbl_players");
+              $sth->execute();
+
+              $result = $sth->fetchAll();
+              foreach ($result as $player)
+              {
+                  $players = implode($player);
+
+                  echo "<option>$players</option>";
+              }
+
+              ?>
 
 
 </select></li>
