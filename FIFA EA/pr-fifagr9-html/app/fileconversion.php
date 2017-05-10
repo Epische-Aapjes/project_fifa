@@ -3,11 +3,11 @@
 require('../index.html');
 
 
-$teamName = $_GET['team-naam'];
+$teamName = $_POST['team-naam'];
 $fn = 'het werkt lol';
-$cvsData = $teamName . "," . $fn . "\n";
+$cvsData = $teamName . "," . $player1 . "," . $player2 ."\n";
 
-$fp = fopen("formTest.csv", "a"); // $fp is now the file pointer to file $filename
+$fp = fopen("Teams.csv", "a"); // $fp is now the file pointer to file $filename
 
 if($fp) {
     $message = 'The conversion workt!';

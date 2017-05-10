@@ -1,24 +1,18 @@
 <?php
-require_once ('database.php');
-$query =("SELECT voornaam FROM project_fifa");
 
-// set array
-$array = array();
+require ('database.php');
 
-// look through query
-while($row = $database->$query){
+$sth = $database->prepare("SELECT first_name FROM tbl_players");
+$sth->execute();
 
-    // add each row returned into an array
-    $array[] = $row;
+$result = $sth->fetchAll();
+var_dump($result);
 
-    // OR just echo the data:
-    echo $row['first_name']; // etc
+foreach ($result as $player)
+{
+    $players = implode(',', $player);
 
+    echo "<p>$players</p>";
 }
-
-
-
-
-
 
 ?>

@@ -82,7 +82,7 @@
 </form>
 
 
-<form class ="team">
+<form class ="team" method="post" action="app/fileconversion.php">
 <div class="text-input">
   <h5>team naam:</h5>
   <input id="inv-tm" type="text" name="team-naam">
@@ -118,41 +118,69 @@
       <li><select name="speler">
   <option value="none">speler 2</option>
   <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
+  $sth = $database->prepare("SELECT first_name FROM tbl_players");
+  $sth->execute();
+
+  $result = $sth->fetchAll();
+  foreach ($result as $player)
+  {
+      $players = implode($player);
+
+      echo "<option>$players</option>";
+  }
+
+  ?>
 </select></</li>
 
       <li><select name="speler">
   <option value="volvo">speler 3</option>
   <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
+  $sth = $database->prepare("SELECT first_name FROM tbl_players");
+  $sth->execute();
+
+  $result = $sth->fetchAll();
+  foreach ($result as $player)
+  {
+      $players = implode($player);
+
+      echo "<option>$players</option>";
+  }
+
+  ?>
 </select></</li>
 
       <li><select name="speler">
   <option value="volvo">speler 4</option>
   <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
+  $sth = $database->prepare("SELECT first_name FROM tbl_players");
+  $sth->execute();
+
+  $result = $sth->fetchAll();
+  foreach ($result as $player)
+  {
+      $players = implode($player);
+
+      echo "<option>$players</option>";
+  }
+
+  ?>
 </select></</li>
 
       <li><select name="speler">
   <option value="volvo">speler 5</option>
   <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
+  $sth = $database->prepare("SELECT first_name FROM tbl_players");
+  $sth->execute();
+
+  $result = $sth->fetchAll();
+  foreach ($result as $player)
+  {
+      $players = implode($player);
+
+      echo "<option>$players</option>";
+  }
+
+  ?>
 
 </select></</li>
 
