@@ -412,23 +412,88 @@ padding-bottom: 6%;
 }
 
 /*====================2e slide ========================*/
+.formall ul {
+  list-style: none;
+  }
 .champ{
 
   margin: 0 auto;
   display: flex;
   text-align: center;
-  width: 10%;
+  width: 90px;
 flex-direction: column;
-padding-bottom: 6%;
+padding-bottom: 1%;
 
 }
 #champ{
-  height: 70px;
+  
+  
+  height: 60px;
   width:70px;
 
 }
+#champw
+{
+  padding-right: 20px;
+}
+.formall{
+  padding-top: 3%;
+  width: 1000px;
+}
 
-champ
+.overall {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+  padding-right: 95px;
+  padding-bottom: 100px;  
+}
+
+.row1{
+  padding-bottom: 30%
+
+}
+
+.row2{
+
+  padding-top: 20%;
+  
+}
+
+.row3{
+  padding-top: 30%;
+}
+
+.row4{
+  padding-bottom: 20%
+}
+
+.singles{
+  padding-top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+#vspic{
+  padding-bottom: 30px;
+  height: 80px;
+  width: 90px;
+}
+#picvs{
+  height:70px ;
+  width: 70px;
+}
+#paddingtool{
+  width: 2px;
+  height: 200px;
+}
+
 
 
 
