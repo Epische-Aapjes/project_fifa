@@ -56,11 +56,33 @@
   
   <!-- ==================slide 2 form======================== -->
 
-<p>BOI</p>
-    <p>BOI BOI BOI</p>
-  <input id="butto" type="text" name="team-naam"><br>
-   <button id="button" type="button">submit</button> 
-  <a href="app/playerlist.php">BOI</a>
+<form action="">
+<ul class="dropdown2">
+	<li><select name="speler">
+  <option value="none">team 1</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></li>
+
+    <li><select name="speler">
+  <option value="none">team 2</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></li>
+
+</ul>	
+
+
+
+</form>
 </div>
 
 <div class="mySlides ">

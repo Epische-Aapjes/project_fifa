@@ -494,7 +494,13 @@ padding-bottom: 1%;
   height: 200px;
 }
 
-
+.dropdown2{
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 
 /* ==========================================================================
