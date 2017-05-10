@@ -90,7 +90,7 @@
   <!-- ==================slide 4 form======================== -->
   
   <div class="style">
-<form class="team-invoer" action="app/addplayer.php" method="post">
+<form class="team-invoer" action="./app/addplayer.php" method="post">
 <div class="addplayer">
 <h5 class="speler-1">een speler toevoegen</h5>
 <ul class="input-playerinf">
@@ -104,107 +104,108 @@
 </form>
 
 
-<form class ="team" method="post" action="app/fileconversion.php">
+<form class ="team" method="post" action="./app/fileconversion.php">
 <div class="text-input">
   <h5>team naam:</h5>
   <input id="inv-tm" type="text" name="team-naam">
    <h4>Teams bekijken</h4>
   </div>
 
+      <div class="dropdown">
+     <h5 class="h5-player">selecteer spelers</h5>
+      <ul id="form-ul">
+          <li name="speler1"><select name="speler1">
+                  <option value="none">Speler 1</option>
+                  <?php
 
-  <div class="dropdown">
- <h5 class="h5-player">selecteer spelers</h5> 
-  <ul id="form-ul">
-      <li><select name="speler">
-              <option value="None">Speler 1</option>
-              <?php
+                  require ('./app/database.php');
 
-              require ('./app/database.php');
+                  $sth = $database->prepare("SELECT first_name FROM tbl_players");
+                  $sth->execute();
 
-              $sth = $database->prepare("SELECT first_name FROM tbl_players");
-              $sth->execute();
-
-              $result = $sth->fetchAll();
-              foreach ($result as $player)
-              {
-                  $players = implode($player);
-
-                  echo "<option>$players</option>";
-              }
-
-              ?>
+                  $result = $sth->fetchAll();
+                  foreach ($result as $player)
+                  {
 
 
-</select></li>
+                      echo "<option value='$player'>{$player['first_name']}</option>";
+                  }
 
-      <li><select name="speler">
-  <option value="none">speler 2</option>
-  <?php
-  $sth = $database->prepare("SELECT first_name FROM tbl_players");
-  $sth->execute();
+                  ?>
 
-  $result = $sth->fetchAll();
-  foreach ($result as $player)
-  {
-      $players = implode($player);
 
-      echo "<option>$players</option>";
-  }
+    </select></li>
 
-  ?>
-</select></</li>
+          <li name="speler2"><select name="speler2">
+      <option name="player2" value="none">speler 2</option>
+      <?php
+      $sth = $database->prepare("SELECT first_name FROM tbl_players");
+      $sth->execute();
 
-      <li><select name="speler">
-  <option value="volvo">speler 3</option>
-  <?php
-  $sth = $database->prepare("SELECT first_name FROM tbl_players");
-  $sth->execute();
+      $result = $sth->fetchAll();
+      foreach ($result as $player)
+      {
 
-  $result = $sth->fetchAll();
-  foreach ($result as $player)
-  {
-      $players = implode($player);
 
-      echo "<option>$players</option>";
-  }
+          echo "<option value='$player'>{$player['first_name']}</option>";
+      }
 
-  ?>
-</select></</li>
+      ?>
+    </select></</li>
 
-      <li><select name="speler">
-  <option value="volvo">speler 4</option>
-  <?php
-  $sth = $database->prepare("SELECT first_name FROM tbl_players");
-  $sth->execute();
+          <li name="speler3"><select name="speler3">
+      <option value="none">speler 3</option>
+      <?php
+      $sth = $database->prepare("SELECT first_name FROM tbl_players");
+      $sth->execute();
 
-  $result = $sth->fetchAll();
-  foreach ($result as $player)
-  {
-      $players = implode($player);
+      $result = $sth->fetchAll();
+      foreach ($result as $player)
+          foreach ($result as $player)
+          {
 
-      echo "<option>$players</option>";
-  }
 
-  ?>
-</select></</li>
+              echo "<option value='$player'>{$player['first_name']}</option>";
+          }
 
-      <li><select name="speler">
-  <option value="volvo">speler 5</option>
-  <?php
-  $sth = $database->prepare("SELECT first_name FROM tbl_players");
-  $sth->execute();
+      ?>
+    </select></</li>
 
-  $result = $sth->fetchAll();
-  foreach ($result as $player)
-  {
-      $players = implode($player);
+          <li name="speler4"><select name="speler4">
+      <option value="none">speler 4</option>
+      <?php
+      $sth = $database->prepare("SELECT first_name FROM tbl_players");
+      $sth->execute();
 
-      echo "<option>$players</option>";
-  }
+      $result = $sth->fetchAll();
+      foreach ($result as $player)
+          foreach ($result as $player)
+          {
 
-  ?>
 
-</select></</li>
+              echo "<option value='$player'>{$player['first_name']}</option>";
+          }
+
+      ?>
+    </select></</li>
+
+          <li name="speler5"><select name="speler5">
+      <option value="none">speler 5</option>
+      <?php
+      $sth = $database->prepare("SELECT first_name FROM tbl_players");
+      $sth->execute();
+
+      $result = $sth->fetchAll();
+      foreach ($result as $player)
+      {
+
+
+          echo "<option value='$player'>{$player['first_name']}</option>";
+      }
+
+      ?>
+
+    </select></</li>
 
   </ul>
   </div>

@@ -12,8 +12,8 @@ if (isset($_POST['voornaam']) && $_POST['voornaam'] != '')
             $firstname = $_POST['voornaam'];
             $lastname = $_POST['achternaam'];
             $studentid = $_POST['studentennummer'];
-            $sql = "INSERT INTO tbl_players (`first_name` `last_name` `student_id`) VALUES ('$firstname''$lastname''$studentid') ";
-            $database->execute($sql);
+            $sth = $database->prepare("INSERT INTO tbl_players (`first_name`, `last_name`, `student_id`) VALUES ('$firstname','$lastname','$studentid') ");
+            $sth->execute();
             $message = 'Speler is toegevoegt.';
             header("location:../index.php?message= $message");
 
