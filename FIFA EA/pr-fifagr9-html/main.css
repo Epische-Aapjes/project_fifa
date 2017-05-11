@@ -504,11 +504,48 @@ padding-bottom: 1%;
   padding-right: 50px;
   list-style: none;
   scale:50px;
-  
+
 }
-#test5{
-  scale: 50.90px;
+.liststyle{
+  margin: 0 auto;
+  text-align: center;
+ list-style: none;
+ display: flex;
+ flex-direction: row;
+ height: 50px;
 }
+
+.ul2{
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  width: 300px;
+}
+.button{
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #306ccc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 70px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.test77{
+  height: 50px;
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+  margin: 10px;
+}
+
 
 
 /* ==========================================================================

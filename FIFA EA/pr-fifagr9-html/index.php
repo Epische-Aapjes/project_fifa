@@ -58,7 +58,7 @@
 
 <form action="">
 <ul class="dropdown2">
-	<li><select name="speler">
+	<li id="test7"><select name="speler">
   <option value="none">team 1</option>
   <?php
       foreach ($players as $player)
@@ -79,6 +79,40 @@
 </select></li>
 
 </ul>	
+
+<ul class="liststyle" >
+	<li><input type="text"></li>
+	<li><input type="text"></li>
+
+</ul>
+
+<ul class="ul2">
+	<li><select class="test77" name="speler">
+  <option value="none">speler die heeft gescoord</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></li>
+<button class="button" type="submit" name="send"><span>add </span>
+</button>
+
+<li><select class="test77" name="speler">
+  <option value="none">speler die heeft gescoord</option>
+  <?php
+      foreach ($players as $player)
+      {
+          echo "<option>$player</option>";
+      }
+      ?>
+</select></li>
+<button class="button" type="submit" name="send"><span>add</span>
+</button>
+
+
+</ul>
 
 
 
