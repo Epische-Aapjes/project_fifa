@@ -506,7 +506,15 @@ padding-bottom: 1%;
   scale:50px;
 
 }
+
+.bhriboi{
+  display: flex;
+  flex-direction: column;
+}
+
 .liststyle{
+  width: 100%
+  height: 700px;
   margin: 0 auto;
   text-align: center;
  list-style: none;
@@ -538,6 +546,19 @@ padding-bottom: 1%;
   cursor: pointer;
   margin: 5px;
 }
+.input5{
+  display: flex;
+  text-align: center;
+  margin: 0 auto
+    height: 50px;
+  width: 120px;
+  padding: 10px;
+  font-size: 50px;
+  margin: 10px;
+}
+
+}
+
 .test77{
   height: 50px;
   width: 150px;
@@ -545,7 +566,10 @@ padding-bottom: 1%;
   font-size: 15px;
   margin: 10px;
 }
-
+  .ulinvres{
+    display: flex;
+    flex-direction: column;
+  }
 
 
 /* ==========================================================================

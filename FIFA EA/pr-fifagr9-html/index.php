@@ -56,7 +56,7 @@
   
   <!-- ==================slide 2 form======================== -->
 
-<form action="">
+<form class="brhiboi" action="">
 <ul class="dropdown2">
 	<li id="test7"><select name="speler">
   <option value="none">team 1</option>
@@ -79,14 +79,14 @@
 </select></li>
 
 </ul>	
+   <ul class="ulinvres">
+<li><ul class="liststyle" >
+	<li><input class="input5" type="text"></li>
+	<li><input class="input5" type="text"></li>
 
-<ul class="liststyle" >
-	<li><input type="text"></li>
-	<li><input type="text"></li>
+</ul></li>
 
-</ul>
-
-<ul class="ul2">
+<li><ul class="ul2">
 	<li><select class="test77" name="speler">
   <option value="none">speler die heeft gescoord</option>
   <?php
@@ -112,10 +112,11 @@
 </button>
 
 
+   </ul></li>
 </ul>
-
-
-
+</form>
+<form action="" method="post">
+	 <button class="button" type="submit" name="send"><span>submit</span>
 </form>
 </div>
 
