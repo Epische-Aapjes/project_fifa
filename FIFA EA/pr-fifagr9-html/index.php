@@ -335,9 +335,62 @@
   <div class="numbertext">4 / 4</div>
 
   <!-- ==================slide 1 form======================== -->
+<form action="">
+	<ul class="ulslide1">
+		<li>
+			<ul class="ulslide1a">
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+			</ul>
+
+		</li>
+
+				<li>
+			<ul class="ulslide1b">
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+			</ul>
+
+		</li>
+
+		<li>
+			<ul class="ulslide1a">
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+			</ul>
+
+		</li>
 
 
-  <img src="img/vjuur.gif" style="width:100%">
+
+
+
+	</ul>
+
+
+
+
+</form>
+
+  
   
 </div>
 
