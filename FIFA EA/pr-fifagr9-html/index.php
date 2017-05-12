@@ -334,8 +334,9 @@
 
   <!-- ==================slide 1 form======================== -->
 <form action="">
-	<ul class="ulslide1">
-		<li>
+	
+	<div class="lislide1f">
+		
 			<ul class="ulslide1a">
 				<li><input   type="text" name=""></li>
 				<li><input   type="text" name=""></li>
@@ -346,10 +347,10 @@
 				<li><input   type="text" name=""></li>
 				<li><input   type="text" name=""></li>
 			</ul>
+	
+		    
 
-		</li>
-
-				<li>
+				
 			<ul class="ulslide1b">
 				<li><input   type="text" name=""></li>
 				<li><input   type="text" name=""></li>
@@ -361,10 +362,10 @@
 				<li><input   type="text" name=""></li>
 			</ul>
 
-		</li>
+		
 
-		<li>
-			<ul class="ulslide1a">
+		
+			<ul class="ulslide1c">
 				<li><input   type="text" name=""></li>
 				<li><input   type="text" name=""></li>
 				<li><input   type="text" name=""></li>
@@ -375,13 +376,13 @@
 				<li><input   type="text" name=""></li>
 			</ul>
 
-		</li>
+		
+</div>
 
 
 
 
-
-	</ul>
+	
 
 
 
