@@ -28,8 +28,12 @@
         <ul>
             <li><a    onclick="currentSlide(4)">Resultaten</a></li>
             <li><a    onclick="currentSlide(3)">Finales</a></li>
-            <li><a    onclick="currentSlide(1)">invoer resultaten</a></li>
-            <li><a    onclick="currentSlide(2)">invoer Teams en Spelers</a></li>
+            <?php
+            echo " <li><a    onclick=\"currentSlide(1)\">invoer resultaten</a></li>";
+            echo "<li><a    onclick=\"currentSlide(2)\">invoer Teams en Spelers</a></li>";
+            ?>
+
+
 
         </ul>
     
@@ -38,8 +42,6 @@
         </header>
 
 <div class="container">
-    
-
 
 
 
@@ -52,8 +54,7 @@
 <div class="slideshow-container">
 
 <div class="mySlides ">
-  <div class="numbertext">1 / 4</div>
-  
+
   <!-- ==================slide 2 form======================== -->
 
 <form class="brhiboi" action="">
@@ -121,7 +122,6 @@
 </div>
 
 <div class="mySlides ">
-  <div class="numbertext">2 / 4</div>
   <!-- ==================slide 4 form======================== -->
   
   <div class="style">
@@ -255,8 +255,7 @@
 </div>
 
 <div class="mySlides ">
-  <div class="numbertext">2 / 4</div>
-  <!-- ==================slide 3 form======================== -->  
+  <!-- ==================slide 3 form======================== -->
   
   <form class="formall" action="">
   <div class="champ">
@@ -332,7 +331,6 @@
 </div>
 
 <div class="mySlides ">
-  <div class="numbertext">4 / 4</div>
 
   <!-- ==================slide 1 form======================== -->
 
