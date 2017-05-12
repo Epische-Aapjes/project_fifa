@@ -10,7 +10,6 @@ var_dump($result);
 
 foreach ($result as $player)
 {
-    $players = implode(',', $player);
 
     echo "<p>$players</p>";
 }

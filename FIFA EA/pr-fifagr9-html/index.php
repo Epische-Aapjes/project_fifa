@@ -29,8 +29,16 @@
             <li><a    onclick="currentSlide(4)">Resultaten</a></li>
             <li><a    onclick="currentSlide(3)">Finales</a></li>
             <?php
-            echo " <li><a    onclick=\"currentSlide(1)\">invoer resultaten</a></li>";
-            echo "<li><a    onclick=\"currentSlide(2)\">invoer Teams en Spelers</a></li>";
+            if ($_SESSION != 0)
+            {
+                echo " <li><a    onclick=\"currentSlide(1)\">invoer resultaten</a></li>";
+                echo "<li><a    onclick=\"currentSlide(2)\">invoer Teams en Spelers</a></li>";
+            }
+            else{
+
+                header("location:./app/login.php");
+            }
+
             ?>
 
 
