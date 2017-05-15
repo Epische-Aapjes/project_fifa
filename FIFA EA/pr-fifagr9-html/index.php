@@ -9,8 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css">
-        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -90,8 +89,8 @@
 </ul>	
    <ul class="ulinvres">
 <li><ul class="liststyle" >
-	<li><input class="input5" type="text"></li>
-	<li><input class="input5" type="text"></li>
+	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
+	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
 
 </ul></li>
 
@@ -107,7 +106,7 @@
 </select></li>
 <button class="button" type="submit" name="send"><span>add </span>
 </button>
-
+vv 
 <li><select class="test77" name="speler">
   <option value="none">speler die heeft gescoord</option>
   <?php
