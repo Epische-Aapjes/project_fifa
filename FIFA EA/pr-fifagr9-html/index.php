@@ -341,9 +341,63 @@
 <div class="mySlides ">
 
   <!-- ==================slide 1 form======================== -->
+<form action="">
+	
+	<div class="lislide1f">
+		
+			<ul class="ulslide1a">
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+			</ul>
+	
+		    
+
+				
+			<ul class="ulslide1b">
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+			</ul>
+
+		
+
+		
+			<ul class="ulslide1c">
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+				<li><input   type="text" name=""></li>
+			</ul>
+
+		
+</div>
 
 
-  <img src="img/vjuur.gif" style="width:100%">
+
+
+	
+
+
+
+
+</form>
+
+  
   
 </div>
 
