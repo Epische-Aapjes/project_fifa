@@ -1,0 +1,33 @@
+*{
+    margin: 0 auto;
+}
+.header{
+    background-color: #222;
+}
+.main{
+    background-color: #696363;
+    height: 800px;
+}
+h1{
+    color:#6A6A6A;
+    padding-left: 55px;
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float:left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #787878;
+}
