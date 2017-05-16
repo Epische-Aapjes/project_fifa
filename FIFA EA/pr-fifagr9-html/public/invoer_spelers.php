@@ -18,7 +18,7 @@
 </div> 
 <div class="main">
  <div class="style">
-<form class="team-invoer" action="./app/addplayer.php" method="post">
+<form class="team-invoer" action="../app/addplayer.php" method="post">
 <div class="addplayer">
 <h5 class="speler-1">een speler toevoegen</h5>
 <ul class="input-playerinf">
@@ -32,7 +32,7 @@
 </form>
 
 
-<form class ="team" method="post" action="./app/fileconversion.php">
+<form class ="team" method="post" action="../app/fileconversion.php">
 <div class="text-input">
   <h5>team naam:</h5>
   <input id="inv-tm" type="text" name="team-naam">
@@ -46,7 +46,7 @@
                   <option value="none">Speler 1</option>
                   <?php
 
-                  require ('./app/database.php');
+                  require ('../app/database.php');
 
                   $sth = $database->prepare("SELECT first_name FROM tbl_players");
                   $sth->execute();
@@ -149,7 +149,7 @@
 </div>
 
   <div class="style">
-<form class="team-invoer" action="./app/addplayer.php" method="post">
+<form class="team-invoer" action="../app/addplayer.php" method="post">
 <div class="addplayer">
 <h5 class="speler-1">een speler toevoegen</h5>
 <ul class="input-playerinf">
@@ -163,7 +163,7 @@
 </form>
 
 
-<form class ="team" method="post" action="./app/fileconversion.php">
+<form class ="team" method="post" action="../app/fileconversion.php">
 <div class="text-input">
   <h5>team naam:</h5>
   <input id="inv-tm" type="text" name="team-naam">
@@ -177,7 +177,7 @@
                   <option value="none">Speler 1</option>
                   <?php
 
-                  require ('./app/database.php');
+                  require ('../app/database.php');
 
                   $sth = $database->prepare("SELECT first_name FROM tbl_players");
                   $sth->execute();
