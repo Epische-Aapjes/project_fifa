@@ -10,10 +10,10 @@
 <div class="header">
   <h1>FIFA-BETS</h1>
   <ul>
-    <li><a href="resultaten.html">Resultaten</a></li>
-    <li style="background-color: #787878"><a href="#Finales">Finales</a></li>
-    <li><a href="invoer_resultaten.php">Invoer-Resultaten</a></li>
-    <li><a href="invoer_spelers.php">Invoer-Teams&amp;Spelers</a></li>
+    <li><a href="./resultaten.php">Resultaten</a></li>
+    <li style="background-color: #787878"><a href="./finales.php">Finales</a></li>
+    <li><a href="./invoer_resultaten.php">Invoer-Resultaten</a></li>
+    <li><a href="./invoer_spelers.php">Invoer-Teams&amp;Spelers</a></li>
   </ul>
 </div> 
 <div class="main">
