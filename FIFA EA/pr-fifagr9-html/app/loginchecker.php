@@ -17,19 +17,19 @@ if ($username != '')
             $stmt->excute();
 
         $message='U bent nu ingelogd';
-        //header("location:../index.php?message=$message");
+        header("location:../index.php?message=$message");
     }
     else
     {
         $message = 'Vul alstublief een wachtwoord in';
-        //header("location:../app/login.php?message=$message");
+        header("location:../index.php?message=$message");
     }
 
 }
 else{
     $message = 'Vul alstublief een gebruikersnaam in';
 
-    //header("location:../app/login.php?message=$message");
+    header("location:../index.php?message=$message");
 }
 
 
