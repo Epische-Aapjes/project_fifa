@@ -1,0 +1,36 @@
+
+body{
+	background-color: #696363;
+}
+
+.button{
+	color: white;
+	background-color:  #306ccc;
+	border-radius: 7px;
+	height: 50px;
+	width: 160px;
+	font-weight: bold;
+
+}
+
+.form-inline{
+	padding-bottom: 10%;
+}
+
+.button-class{
+
+	width: 100%
+
+}
+p{
+	color: white;
+}
+.button-ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 400px;
+	
+
+}

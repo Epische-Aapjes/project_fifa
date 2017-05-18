@@ -6,12 +6,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Login</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="row">
@@ -23,7 +25,7 @@
                     <h1>Login</h1>
                     <form action="./app/loginchecker.php" method="post" class="form-inline">
 
-
+                         
                         <label class="sr-only" for="inlineFormInput">Username</label>
                         <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="username">
 
@@ -56,7 +58,14 @@
                         }
                         ?>
                     </form>
-                    <h3><a href="no-login/resultaten.php">naar de site zonder login</a></h3>
+
+
+                          <div class="button-class" ></div>
+                       <ul class="button-ul" >
+                      <li><button  class="button"  onclick="window.location.href='no-login/resultaten.php'">zonder inloggen</button></li>
+                                                                       
+                     <li> <button  class="button"  onclick="window.location.href='no-login/register.php'">registreren</button>   </li> 
+                      </ul>  
                 </div>
             </div>
         </div>
