@@ -284,3 +284,15 @@ padding-bottom: 6%;
 
 
 /*---------einde invoer spelers-------*/
+/*=============home=================*/
+h1{
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+
+}
+h3{
+  margin: 0 auto;
+  text-align: center;
+
+}
