@@ -21,9 +21,14 @@
 	<li id="test7"><select name="speler">
   <option value="none">team 1</option>
   <?php
-      foreach ($players as $player)
+  require_once ('../app/database.php');
+  $sth = $database->prepare("SELECT `name` FROM tbl_teams");
+  $sth->execute();
+  $result = $sth->fetchAll();
+
+      foreach ($result as $team)
       {
-          echo "<option>$player</option>";
+          echo "<option value='{$team['name']}'>{$team['name']}</option>";
       }
       ?>
 </select></li>
@@ -31,9 +36,9 @@
     <li><select name="speler">
   <option id="test5" value="none">team 2</option>
   <?php
-      foreach ($players as $player)
+      foreach ($result as $team)
       {
-          echo "<option>$player</option>";
+          echo "<option value='{$team['name']}'>{$team['name']}</option>";
       }
       ?>
 </select></li>

@@ -1,376 +1,65 @@
+
+
+
+
+
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>fifa-bets</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-    <div class="maincontent">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <header>
-        <h1 id="fifa">FIFA-bets</h1>
-        
-        <ul>
-            <li><a    onclick="currentSlide(4)">Resultaten</a></li>
-            <li><a    onclick="currentSlide(3)">Finales</a></li>
-            <?php
-            if ($_SESSION != 0)
-            {
-                echo " <li><a    onclick=\"currentSlide(1)\">invoer resultaten</a></li>";
-                echo "<li><a    onclick=\"currentSlide(2)\">invoer Teams en Spelers</a></li>";
-            }
-            else{
-
-                header("location:./app/login.php");
-            }
-
-            ?>
-
-
-
-        </ul>
-    
-
-
-        </header>
-
-<div class="container">
-
-
-
-
-
-
-
-
-
-<div class="slideshow-container">
-
-<div class="mySlides ">
-
-  <!-- ==================slide 2 form======================== -->
-
-<form class="brhiboi" action="">
-<ul class="dropdown2">
-	<li id="test7"><select name="speler">
-  <option value="none">team 1</option>
-  <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
-</select></li>
-
-    <li><select name="speler">
-  <option id="test5" value="none">team 2</option>
-  <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
-</select></li>
-
-</ul>	
-   <ul class="ulinvres">
-<li><ul class="liststyle" >
-	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
-	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
-
-</ul></li>
-
-<li><ul class="ul2">
-	<li><select class="test77" name="speler">
-  <option value="none">speler die heeft gescoord</option>
-  <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
-</select></li>
-<button class="button" type="submit" name="send"><span>add </span>
-</button>
-vv 
-<li><select class="test77" name="speler">
-  <option value="none">speler die heeft gescoord</option>
-  <?php
-      foreach ($players as $player)
-      {
-          echo "<option>$player</option>";
-      }
-      ?>
-</select></li>
-<button class="button" type="submit" name="send"><span>add</span>
-</button>
-
-
-   </ul></li>
-</ul>
-</form>
-<form action="" method="post">
-	 <button class="button" type="submit" name="send"><span>submit</span>
-</form>
-</div>
-
-<div class="mySlides ">
-  <!-- ==================slide 4 form======================== -->
-  
-  <div class="style">
-<form class="team-invoer" action="./app/addplayer.php" method="post">
-<div class="addplayer">
-<h5 class="speler-1">een speler toevoegen</h5>
-<ul class="input-playerinf">
-<li><input id="addplayer" type="text" name="voornaam" placeholder="voornaam: "></li>
-   <li> <input id="addplayer" type="text" name="achternaam" placeholder="achternaam: "></li>
-   <li> <input id="addplayer" type="text" name="studentennummer" placeholder="studentennummer: "></li>
-<li class="toevoegen"><button id="addplayerbutton" type="submit" name="send" value="verstuur"><span>toevoegen </span>
-</button> </li>
-</ul>
-</div>
-</form>
-
-
-<form class ="team" method="post" action="./app/fileconversion.php">
-<div class="text-input">
-  <h5>team naam:</h5>
-  <input id="inv-tm" type="text" name="team-naam">
-   <h4>Teams bekijken</h4>
-  </div>
-
-      <div class="dropdown">
-     <h5 class="h5-player">selecteer spelers</h5>
-      <ul id="form-ul">
-          <li name="speler1"><select name="speler1">
-                  <option value="none">Speler 1</option>
-                  <?php
-
-                  require ('./app/database.php');
-
-                  $sth = $database->prepare("SELECT first_name FROM tbl_players");
-                  $sth->execute();
-
-                  $result = $sth->fetchAll();
-                  foreach ($result as $player)
-                  {
-
-
-                      echo "<option value='$player'>{$player['first_name']}</option>";
-                  }
-
-                  ?>
-
-
-    </select></li>
-
-          <li name="speler2"><select name="speler2">
-      <option name="player2" value="none">speler 2</option>
-      <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
-
-      $result = $sth->fetchAll();
-      foreach ($result as $player)
-      {
-
-
-          echo "<option value='$player'>{$player['first_name']}</option>";
-      }
-
-      ?>
-    </select></</li>
-
-          <li name="speler3"><select name="speler3">
-      <option value="none">speler 3</option>
-      <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
-
-      $result = $sth->fetchAll();
-      foreach ($result as $player)
-          foreach ($result as $player)
-          {
-
-
-              echo "<option value='$player'>{$player['first_name']}</option>";
-          }
-
-      ?>
-    </select></</li>
-
-          <li name="speler4"><select name="speler4">
-      <option value="none">speler 4</option>
-      <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
-
-      $result = $sth->fetchAll();
-      foreach ($result as $player)
-          foreach ($result as $player)
-          {
-
-
-              echo "<option value='$player'>{$player['first_name']}</option>";
-          }
-
-      ?>
-    </select></</li>
-
-          <li name="speler5"><select name="speler5">
-      <option value="none">speler 5</option>
-      <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
-
-      $result = $sth->fetchAll();
-      foreach ($result as $player)
-      {
-
-
-          echo "<option value='$player'>{$player['first_name']}</option>";
-      }
-
-      ?>
-
-    </select></</li>
-
-  </ul>
-  </div>
- <div class="submit">
-     
-<button class="button" type="submit" name="send"><span>verstuur </span>
-</button>
- </div>
-
-</form>
-  </div>
-</div>
-
-
-
-
-  <!-- ==================slide 1 form======================== -->
-
-
-  
-  
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-8 col-sm-6">
+                </div>
+                <div class="col-4 col-sm-6">
+                    <h1>Login</h1>
+                    <form action="./app/loginchecker.php" method="post" class="form-inline">
+
+
+                        <label class="sr-only" for="inlineFormInput">Username</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="username">
+
+                        <label class="sr-only" for="inlineFormInput">Password</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+                            <div class="input-group-addon">@</div>
+                            <input type="password" class="form-control" id="inlineFormInputGroup" name="password">
+                        </div>
+                        <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <?php
+                        error_reporting(0);
+
+                        if ($_GET['message'])
+                        {
+                            $message = $_GET['message'];
+                            echo "<div class='alert alert-danger' role='alert'>";
+                            echo "  <strong>Oh snap!</strong>";
+                            echo "   <a href='login.php' class='alert-link'>$message</a>";
+                            echo "   en probeer het opnieuw.";
+                            echo "</div>";
+                        }
+                        else{
+
+                        }
+                        ?>
+                    </form>
+                    <h3><a href="no-login/resultaten.php">naar de site zonder login</a></h3>
+                </div>
+            </div>
         </div>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-
-
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+    </div>
+</body>
 </html>

@@ -42,11 +42,11 @@
       <div class="dropdown">
      <h5 class="h5-player">selecteer spelers</h5>
       <ul id="form-ul">
-          <li name="speler1"><select name="speler1">
+          <li><select name="speler1">
                   <option value="none">Speler 1</option>
                   <?php
 
-                  require ('../app/database.php');
+                  require_once ('../app/database.php');
 
                   $sth = $database->prepare("SELECT first_name FROM tbl_players");
                   $sth->execute();
@@ -54,9 +54,7 @@
                   $result = $sth->fetchAll();
                   foreach ($result as $player)
                   {
-
-
-                      echo "<option value='$player'>{$player['first_name']}</option>";
+                      echo "<option value='{$player['first_name']}'>{$player['first_name']}</option>";
                   }
 
                   ?>
@@ -64,54 +62,42 @@
 
     </select></li>
 
-          <li name="speler2"><select name="speler2">
+          <li><select name="speler2">
       <option name="player2" value="none">speler 2</option>
       <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
 
-      $result = $sth->fetchAll();
       foreach ($result as $player)
       {
-
-
-          echo "<option value='$player'>{$player['first_name']}</option>";
+          echo "<option value='{$player['first_name']}'>{$player['first_name']}</option>";
       }
 
       ?>
     </select></</li>
 
-          <li name="speler3"><select name="speler3">
+          <li><select name="speler3">
       <option value="none">speler 3</option>
       <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
 
-      $result = $sth->fetchAll();
-      foreach ($result as $player)
           foreach ($result as $player)
           {
 
 
-              echo "<option value='$player'>{$player['first_name']}</option>";
+              echo "<option value='{$player['first_name']}'>{$player['first_name']}</option>";
           }
 
       ?>
     </select></</li>
 
-          <li name="speler4"><select name="speler4">
+          <li><select name="speler4">
       <option value="none">speler 4</option>
       <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
 
-      $result = $sth->fetchAll();
       foreach ($result as $player)
           foreach ($result as $player)
           {
 
 
-              echo "<option value='$player'>{$player['first_name']}</option>";
+              echo "<option value='{$player['first_name']}'>{$player['first_name']}</option>";
           }
 
       ?>
@@ -120,15 +106,13 @@
           <li name="speler5"><select name="speler5">
       <option value="none">speler 5</option>
       <?php
-      $sth = $database->prepare("SELECT first_name FROM tbl_players");
-      $sth->execute();
 
-      $result = $sth->fetchAll();
+
       foreach ($result as $player)
       {
 
 
-          echo "<option value='$player'>{$player['first_name']}</option>";
+          echo "<option value='{$player['first_name']}'>{$player['first_name']}</option>";
       }
 
       ?>
