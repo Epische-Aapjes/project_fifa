@@ -30,7 +30,7 @@
                         <label class="sr-only" for="inlineFormInput">Password</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
 
-                            <div class="input-group-addon">@</div>
+                            <!--<div class="input-group-addon"></div>-->
                             <input type="password" class="form-control" id="inlineFormInputGroup" name="password">
                         </div>
                         <div class="form-check mb-2 mr-sm-2 mb-sm-0">
