@@ -22,7 +22,9 @@ $fp = fopen("Teams.csv", "a"); // $fp is now the file pointer to file $filename
 if($fp) {
     $message = 'Het is mij gelukt!';
 
-    $stmt = $database->prepare("INSERT INTO tbl_teams VALUE (':')");
+    $stmt = $database->prepare("INSERT INTO tbl_teams VALUE (':team')");
+    $stmt->bindParam(':team', $teamName);
+    $stmt->excute();
     //fwrite($fp, $cvsData); // Write information to the file
     fclose($fp); // Close the file
    // header("location:../index.php?message=$message");

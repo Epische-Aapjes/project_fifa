@@ -53,6 +53,7 @@
                         }
                         ?>
                  </form>
+                 <h3><a href="no-login/resultaten.php">naar de site zonder login</a></h3>
              </div>
          </div>
      </div>
