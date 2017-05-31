@@ -5,48 +5,59 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 
-//$admin = 0;
-//$stmt = $database->prepare("SELECT Username FROM tbl_users WHERE Username = (:username)");
-//var_dump($stmt);
-// $stmt->bindParam(':username', $username);
-// var_dump($stmt);
-// $stmt->execute();
-//$stmt->bindParam(':password', $password);
-//$stmt->bindParam(':admin', $admin);
-// var_dump($username);
-//var_dump($password);
-
-
 if ($username != '')
 {
-    if ($password != '')
+    $sql = "SELECT Username FROM tbl_users WHERE Username = '$username'";
+    $sth = $database->prepare($sql);
+    $sth->execute();
+    $fetchType = PDO::FETCH_ASSOC;
+    $count = $sth->rowCount();
+    $results = $sth->fetchall($fetchType);
+    if ($count > 0)
     {
-        if ($username == 'admin')
+
+        if ($password != '')
         {
-            if ($password == 'admin')
+            $sql = "SELECT Password FROM tbl_users WHERE password = '$password'";
+            $sth = $database->prepare($sql);
+            $sth->execute();
+            $fetchType = PDO::FETCH_ASSOC;
+            $count = $sth->rowCount();
+            $results = $sth->fetchall($fetchType);
+            if ($count >0)
             {
-                $message = 'u bent ingelogd! Welkom terug admin';
-                header("location:../public/resultaten.php?message=$message");
+                if ($username == 'admin' && $password == 'admin')
+                {
+                        $message = 'u bent ingelogd! Welkom terug admin';
+                        header("location:../public/resultaten.php?message=$message");
+                }
+                else{
+                    $message = 'u bent ingelogd!';
+                    header("location:../no-login/resultaten.php?message=$message");
+                }
             }
             else{
-                $message = 'u bent ingelogd! Welkom terug';
-                header("location:../no-login/resultaten.php?message=$message");
+                $message = 'Geen geldige wachtwoord';
+                header("location:../index.php?message=$message");
             }
+
+
         }
         else{
-            $message = 'u bent ingelogd!';
-            header("location:../no-login/resultaten.php?message=$message");
+            $message = 'Vul alstublieft een wachtwoord in';
+            header("location:../index.php?message=$message");
         }
-
     }
-    else{
-        $message = 'Vul alstublief een wachtwoord in';
+    else
+    {
+        $message = 'Geen geldige gebruikersnaam';
         header("location:../index.php?message=$message");
     }
 
+
 }
 else{
-    $message = 'Vul alstublief een gebruikersnaam in';
+    $message = 'Vul alstublieft een gebruikersnaam in';
     header("location:../index.php?message=$message");
 }
 
