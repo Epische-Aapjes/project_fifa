@@ -119,39 +119,35 @@ padding-bottom: 1%;
 /*----------einde finales css---------*/
 
 /*--------resultaten css------------*/
-.ulslide1{
+.lislide1f{
+  background-color: pink;
+  color: pink;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+width: 100%;
+}
+.lislide1a{
+  background-color: pink;
+  color: pink;
   display: flex;
   margin: 0 auto;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 53%;
-  list-style: none;
-
-
-}
-
-
-.ulslide1 {
-  list-style: none;
-  display: flex;
-  
+  flex-direction: column;
 }
 
 
 
- .ulslide1b {
-  list-style: none;
-  
- 
 
-  width: 30px;
- }
-.ulslide1c{
-  padding-left: 40px;
-  list-style: none;a
-}
 /*---------einde resultaten css------*/
+.header-button{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+
+
 
 /*--------invoer spelers--------------*/
 #addplayer{
