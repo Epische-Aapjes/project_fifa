@@ -46,8 +46,8 @@
 </ul>	
    <ul class="ulinvres">
 <li><ul class="liststyle" >
-	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
-	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
+	<li ><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
+	<li ><input class="form-control mb-2 mr-sm-2 mb-sm-0 numinv2 " type="text"></li>
 
 </ul></li>
 
