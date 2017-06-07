@@ -2,7 +2,7 @@
 require ('database.php');
 
 
-
+//checks everything for a value
 if (isset($_POST['voornaam']) && $_POST['voornaam'] != '')
 {
     if (isset($_POST['achternaam']) && $_POST['achternaam'] != '')
@@ -12,6 +12,7 @@ if (isset($_POST['voornaam']) && $_POST['voornaam'] != '')
             $firstname = $_POST['voornaam'];
             $lastname = $_POST['achternaam'];
             $studentid = $_POST['studentennummer'];
+            //puts it into the Database
             $sth = $database->prepare("INSERT INTO tbl_players (`first_name`, `last_name`, `student_id`) VALUES ('$firstname','$lastname','$studentid') ");
             $sth->execute();
             $message = 'Speler is toegevoegt.';
