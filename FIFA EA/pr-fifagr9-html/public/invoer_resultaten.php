@@ -17,9 +17,13 @@
 </div> 
 <div class="main">
 <form class="brhiboi" action="">
-<ul class="dropdown2">
-	<li id="test7"><select name="speler">
-  <option value="none">team 1</option>
+
+<div class="padding-tool2">
+
+
+	
+  <select class="bob" name="speler">
+  <option  id="test5" value="none">team 1</option>
   <?php
   require_once ('../app/database.php');
   $sth = $database->prepare("SELECT `name` FROM tbl_teams");
@@ -31,27 +35,35 @@
           echo "<option value='{$team['name']}'>{$team['name']}</option>";
       }
       ?>
-</select></li>
-
-    <li><select name="speler">
-  <option id="test5" value="none">team 2</option>
+</select>
+ 
+ <div class="testsjoerd" >
+ <select class="bob" name="speler">
+  <option  id="test5" value="none">team 2</option>
   <?php
+  require_once ('../app/database.php');
+  $sth = $database->prepare("SELECT `name` FROM tbl_teams");
+  $sth->execute();
+  $result = $sth->fetchAll();
+
       foreach ($result as $team)
       {
           echo "<option value='{$team['name']}'>{$team['name']}</option>";
       }
       ?>
-</select></li>
+</select></div>
+</div>
 
-</ul>	
+	
    <ul class="ulinvres">
-<li><ul class="liststyle" >
+   <div class="padding-tool3" >
+ 
 	<li ><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
 	<li ><input class="form-control mb-2 mr-sm-2 mb-sm-0 numinv2 " type="text"></li>
+</div>
+</ul>
 
-</ul></li>
-
-<li><ul class="ul2">
+<ul class="ul2">
 	<li><select class="test77" name="speler">
   <option value="none">speler die heeft gescoord</option>
   <?php
@@ -61,10 +73,10 @@
       }
       ?>
 </select></li>
-<button class="button" type="submit" name="send"><span>add </span>
+<button    id="button8" type="submit" name="send"><span id="button8">add </span>
 </button>
  
-<li><select class="test77" name="speler">
+<li class="v2"><select class="test77" name="speler">
   <option value="none">speler die heeft gescoord</option>
   <?php
       foreach ($players as $player)
@@ -73,14 +85,14 @@
       }
       ?>
 </select></li>
-<button class="button" type="submit" name="send"><span>add</span>
+<button id="button8"  type="submit" name="send"><span id="button8">add</span>
 </button>
 
 
    </ul></li>
 </ul>
 </form>
-<form action="" method="post">
+<form class="centerknop" action="" method="post">
 	 <button class="button" type="submit" name="send"><span>submit</span>
 </form>
 </div>
