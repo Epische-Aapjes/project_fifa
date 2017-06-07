@@ -4,18 +4,20 @@ require_once ('database.php');
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-
+//checks the input
 if ($username != '')
 {
+    //selects the username
     $sql = "SELECT Username FROM tbl_users WHERE Username = '$username'";
     $sth = $database->prepare($sql);
     $sth->execute();
     $fetchType = PDO::FETCH_ASSOC;
     $count = $sth->rowCount();
     $results = $sth->fetchall($fetchType);
+    //checks if it exists
     if ($count > 0)
     {
-
+        //does the same for the password
         if ($password != '')
         {
             $sql = "SELECT Password FROM tbl_users WHERE password = '$password'";
