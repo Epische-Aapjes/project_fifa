@@ -16,54 +16,44 @@
   </ul>
 </div> 
 <div class="main">
-<form class="brhiboi" action="">
-
-<div class="padding-tool2">
-
-
-	
-  <select class="bob" name="speler">
-  <option  id="test5" value="none">team 1</option>
+<form class="brhiboi" action="../app/addmatch.php" method="post">
+<ul class="dropdown2">
+	<li><select name="team">
+  <option value="none">team 1</option>
   <?php
   require_once ('../app/database.php');
   $sth = $database->prepare("SELECT `name` FROM tbl_teams");
   $sth->execute();
   $result = $sth->fetchAll();
 
-      foreach ($result as $team)
+      foreach ($result as $teamHome)
       {
-          echo "<option value='{$team['name']}'>{$team['name']}</option>";
+          echo "<option name='teamHome'>{$teamHome['name']}</option>";
       }
       ?>
-</select>
- 
- <div class="testsjoerd" >
- <select class="bob" name="speler">
-  <option  id="test5" value="none">team 2</option>
+</select></li>
+
+    <li><select name="teamAway">
+  <option id="test5" value="none">team 2</option>
   <?php
-  require_once ('../app/database.php');
-  $sth = $database->prepare("SELECT `name` FROM tbl_teams");
-  $sth->execute();
-  $result = $sth->fetchAll();
-
-      foreach ($result as $team)
+      foreach ($result as $teamAway)
       {
-          echo "<option value='{$team['name']}'>{$team['name']}</option>";
+          echo "<option name='teamAway'value='{$teamAway['name']}'>{$teamAway['name']}</option>";
       }
       ?>
-</select></div>
-</div>
+</select></li>
 
-	
-   <ul class="ulinvres">
-   <div class="padding-tool3" >
- 
-	<li ><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
-	<li ><input class="form-control mb-2 mr-sm-2 mb-sm-0 numinv2 " type="text"></li>
-</div>
 </ul>
+    <button class="button" type="submit" name="send"><span>submit</span>
+</form>
+   <ul class="ulinvres">
+<li><ul class="liststyle" >
+	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
+	<li><input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text"></li>
 
-<ul class="ul2">
+</ul></li>
+
+<li><ul class="ul2">
 	<li><select class="test77" name="speler">
   <option value="none">speler die heeft gescoord</option>
   <?php
@@ -73,10 +63,10 @@
       }
       ?>
 </select></li>
-<button    id="button8" type="submit" name="send"><span id="button8">add </span>
+<button class="button" type="submit" name="send"><span>add </span>
 </button>
  
-<li class="v2"><select class="test77" name="speler">
+<li><select class="test77" name="speler">
   <option value="none">speler die heeft gescoord</option>
   <?php
       foreach ($players as $player)
@@ -85,16 +75,12 @@
       }
       ?>
 </select></li>
-<button id="button8"  type="submit" name="send"><span id="button8">add</span>
+<button class="button" type="submit" name="send"><span>add</span>
 </button>
 
 
    </ul></li>
 </ul>
-</form>
-<form class="centerknop" action="" method="post">
-	 <button class="button" type="submit" name="send"><span>submit</span>
-</form>
 </div>
 </div>
 
