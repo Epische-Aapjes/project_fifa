@@ -1,0 +1,15 @@
+*{
+	margin: 0 auto;
+	width: 1280px;
+
+}
+html{
+	background-color: cyan;
+}
+
+button{
+	width: 1280px;
+}
+.username{
+	margin-top: 15px;
+}
