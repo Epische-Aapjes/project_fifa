@@ -40,14 +40,12 @@ if ($username != '')
             }
             else{
                 $message = 'Geen geldige wachtwoord';
-                header("location:../index.php?message=$message");
+                header("location:../login.php?message=$message");
             }
-
-
         }
         else{
             $message = 'Vul alstublieft een wachtwoord in';
-            header("location:../index.php?message=$message");
+            header("location:../login.php?message=$message");
         }
     }
     else
@@ -55,17 +53,9 @@ if ($username != '')
         $message = 'Geen geldige gebruikersnaam';
         header("location:../index.php?message=$message");
     }
-
-
 }
 else{
     $message = 'Vul alstublieft een gebruikersnaam in';
     header("location:../index.php?message=$message");
 }
-
-
-
-
-
-
 ?>

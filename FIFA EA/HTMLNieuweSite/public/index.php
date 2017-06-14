@@ -19,24 +19,6 @@
     <p>Minimum Player: 4 Members</p>
     <p>Maximim Player: 5 Members (Where 1 is reserve)</p>
 </div>
-<!-- resultaten -->
-    <div class="main" id="#resultaten">
-        <?php
-        require_once ("../app/database.php");
-
-        $stmt = $database->prepare("SELECT team_id_a FROM tbl_matches");
-        $stmt->execute();
-        $fetchType = PDO::FETCH_ASSOC;
-        $count = $stmt->rowCount();
-        $results = $stmt->fetchall($fetchType);
-
-        foreach ($results as $match)
-        {
-            echo "<p>$match <- id a</p>";
-        }
-        ?>
-    </div>
-
 <!-- finales -->
     <div class="main" id="#finales">
         <h1>Finales</h1>
