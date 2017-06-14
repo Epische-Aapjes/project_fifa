@@ -19,7 +19,7 @@
 <div class="nav-bar">
     <div class="header-space-between">
         <nav>
-            <a href="../index.php">Home</a>
+            <a href="./index.php">Home</a>
             <a href="#resultaten">Resultaten</a>
             <a href="#finales">Finales</a>
             <a href="./public/login.php">Login</a>

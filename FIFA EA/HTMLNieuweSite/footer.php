@@ -5,7 +5,7 @@
         <div class="footer-space-between">
             <p>-Test.fase.1.alpha.V1.12-</p>
                 <nav>
-                    <a href="index.php">Home</a>
+                    <a href="../index.php">Home</a>
                 </nav>
         </div>
     </div>
