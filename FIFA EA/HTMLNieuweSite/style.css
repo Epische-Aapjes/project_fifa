@@ -1,15 +1,15 @@
 *{
 	margin: 0 auto;
-	width: 1280px;
 
 }
-html{
-	background-color: cyan;
-}
+.nav ul{
+	display: flex;
+	justify-content: space-around;
+	list-style-type:none;
 
-button{
-	width: 1280px;
 }
-.username{
-	margin-top: 15px;
+.header{
+	clear: both;
+	justify-content: center;
+
 }
