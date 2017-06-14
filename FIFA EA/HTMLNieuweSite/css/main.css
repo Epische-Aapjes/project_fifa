@@ -94,23 +94,127 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ------------- Header -------------- */
+.container {
+    background-color: #707070;
+    font-family: 'Alegreya', serif;
+}
 
+.nav-bar {
+    background-color: #202020;
+    position: relative;
+}
 
+.header-space-between {
+    margin: 0 auto;
+    width: 1000px;
+    height: 80px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
 
+nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px;
+    font-size: 14pt;
+    color: #707070;
+    border: solid #707070 2px;
+    border-radius: 2px 14px 2px 14px;
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration-line: none;
+    transition: 0.1s;
+}
 
+nav a:hover {
+    font-size: 14pt;
+    padding: 7px;
+    color: white;
+    border: solid white 2px;
+    border-radius: 20px 1px 20px 1px;
+}
 
+/* ------------- main -------------- */
+img {
+    width: 480px;
+    height: 270px;
+    transition: 2s;
+    margin-bottom: 20px;
+}
 
+h1 {
+    padding-left: 190px;
+    color: #707070;
+}
+.img-section {
+    margin: 0 auto;
+    width: 1000px;
+}
 
+.list-img-top {
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
 
+.list-img-middle-1 {
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
 
+.list-img-middle-2 {
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
 
+.list-img-bottom {
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
 
+img:hover {
+    opacity: 0.4;
+}
 
+/* ------------- footer -------------- */
+.footer-color {
+    margin: 0 auto;
+    background-color: #202020;
+    color: #707070;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
 
+.footer-color p {
+    margin: 14px 0 13px 180px;
+}
 
-
-
-
+.footer-color nav a {
+    margin-left: 288px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

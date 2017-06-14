@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="header.css">
-</head>
-<body>
+<?php require ('../public/header.php'); ?>
 
-<div class="header">
-  <h1>FIFA-BETS</h1>
-  <ul>
-    <li><a href="./resultaten.php">Resultaten</a></li>
-    <li style="background-color: #787878"><a href="./finales.php">Finales</a></li>
-    <li><a href="./invoer_resultaten.php">Invoer-Resultaten</a></li>
-    <li><a href="./invoer_spelers.php">Invoer-Teams&amp;Spelers</a></li>
-  </ul>
-</div> 
 <div class="main">
 <form class="formall" action="">
   <div class="champ">
