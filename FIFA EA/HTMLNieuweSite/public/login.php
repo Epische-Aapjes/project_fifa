@@ -1,10 +1,10 @@
-<?php require ('../header.php'); ?>
+<?php require ('../public/header.php'); ?>
 
 <title>Login</title>
 
 <div class="login">
     <h1>Login</h1>
-        <form action="./app/loginchecker.php" method="post" class="form-inline">
+        <form action="../app/loginchecker.php" method="post" class="form-inline">
             <label for="inlineFormInput">Username:</label>
             <input type="text" name="username">
             <label for="inlineFormInput">Password:</label>
@@ -29,4 +29,4 @@
 </form>
 </div>
 
-<?php require ('../footer.php'); ?>
+<?php require ('../public/footer.php'); ?>
